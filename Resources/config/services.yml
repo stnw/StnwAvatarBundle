@@ -1,0 +1,13 @@
+parameters:
+    avatar.folder:  #path to the folder with male & female templates folders
+    avatar.male_folders: [face, hair, nose, eye, mouth] #folders with templates. From every folder one png file will be  a layer for avatar.
+    avatar.female_folders: [hair, face, nose, eye, mouth]
+    avatar.manager.class: Stnw\AvatarBundle\Manager\AvatarManager
+
+services:
+    avatar.manager:
+        class:  %avatar.manager.class%
+        arguments:
+            - %avatar.male_folders%
+            - %avatar.female_folders%
+            - %avatar.folder%
