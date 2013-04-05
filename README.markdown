@@ -7,9 +7,9 @@ Installation
 
   1. Add this bundle to your debs file.
 
-   [StnwAvatarBundle]
-      git=https://github.com/stnw/StnwAvatarBundle
-      target=/bundles/Stnw/AvatarBundle
+          [StnwAvatarBundle]
+             git=https://github.com/stnw/StnwAvatarBundle
+             target=/bundles/Stnw/AvatarBundle
 
   2. Add `Stnw` namespace to your autoloader:
 
@@ -33,9 +33,10 @@ Installation
           }
   4. Update vendors:
 
-      php bin/vendors update
+          php bin/vendors update
 
   5. If you want to change default avatar templates, configure the `stnw_avatar` service in your config:
+
           # application/config/config.yml
           stnw_avatar:
             avatar.folder:  #path to the folder with male & female templates folders
@@ -47,12 +48,12 @@ Usage
 
 To generate an avatar in a folder:
 
-  $avatarManager = $this->get('avatar.manager');
-  $avatarPach = $this->get('kernel')->getRootDir() . '/../web/avatar.png';
-  $result = $avatarManager->generateAvatar($avatarPach);
+          $avatarManager = $this->get('avatar.manager');
+          $avatarPach = $this->get('kernel')->getRootDir() . '/../web/avatar.png';
+          $result = $avatarManager->generateAvatar($avatarPach);
 
 Or with parameters:
 
-      $result = $avatarManager->generateAvatar($avatarPath, 'female', 100);
+          $result = $avatarManager->generateAvatar($avatarPath, 'female', 100);
 
 The only required parameter is the path for the new avatar. The rest have default values.
