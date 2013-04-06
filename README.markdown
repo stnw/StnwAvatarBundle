@@ -1,6 +1,6 @@
 StnwAvatarBundle
 =====================
-Simple bundle to generate avatars. Provides specification of male & female avatar's version, size, possibility to save or to output in a browser. Already includes templates of avatars. Also you can add/change your templates.
+Simple Symfony2 bundle to generate avatars. Provides specification of male & female avatar's version, size, possibility to save or to output in a browser. Already includes templates of avatars. Also you can add/change your templates.
 
 Installation
 ------------
