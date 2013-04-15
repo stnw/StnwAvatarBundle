@@ -15,7 +15,7 @@
 
     "autoload": {
         "psr-0": {
-            " Stnw\AvatarBundle": ""
+            "Stnw\AvatarBundle": ""
         }
     },
     "target-dir": "Stnw/AvatarBundle"
