@@ -5,6 +5,7 @@
             "name": "Sergey Studenikin"
         }
     ],
+    "description": "Simple Symfony bundle to generate avatars.",
     "name": "stnw/avatar-bundle",
     "type": "symfony-bundle",
     "keywords":["avatar", "generator", "img", "image"],
