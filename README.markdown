@@ -11,7 +11,15 @@ Installation
              git=https://github.com/stnw/StnwAvatarBundle
              target=/bundles/Stnw/AvatarBundle
 
-  2. Add `Stnw` namespace to your autoloader:
+  2. Add the following dependency to your project’s composer.json file:
+
+          "require": {
+            // ...
+            "stnw/avatar-bundle": "dev-master"
+            // ...
+          }
+
+ or `Stnw` namespace to your autoloader:
 
           // app/autoload.php
           $loader->registerNamespaces(array(
