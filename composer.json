@@ -1,0 +1,23 @@
+{
+    "authors": [
+        {
+            "email": "studenikin.s@gmail.com",
+            "name": "Sergey Studenikin"
+        }
+    ],
+    "name": "stnw/avatar-bundle",
+    "type": "symfony-bundle",
+    "keywords":["avatar", "generator", "img", "image"],
+
+    "require": {
+        "symfony/framework-bundle": "2.*"
+    },
+
+    "autoload": {
+        "psr-0": {
+            " Stnw\AvatarBundle": ""
+        }
+    },
+
+    "target-dir": "Stnw/AvatarBundle"
+}
